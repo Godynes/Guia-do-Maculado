@@ -3,117 +3,525 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chefes - O Guia do Maculado</title>
-    <meta name="description" content="Guia de chefes de Elden Ring com localizações, desafios e recompensas das Terras Intermédias.">
+    <title>Chefes — O Guia do Maculado</title>
+    <meta name="description" content="Guia completo de chefes de Elden Ring: fases, fraquezas, drops e dicas de combate para cada região das Terras Intermédias.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="index.html" class="voltar-home" aria-label="Voltar para a página principal">← Início</a>
 
-    <header>
-        <h1>Chefes</h1>
-        <p>Descubra os desafios mais formidáveis das Terras Intermédias.</p>
-    </header>
-    <main class="bosses-page">
+<a href="index.html" class="voltar-home" aria-label="Voltar para a página principal">← Início</a>
 
-        <nav class="region-menu">
-            <a href="#limgrave">Limgrave</a>
-            <a href="#liurnia">Liurnia</a>
-            <a href="#caelid">Caelid</a>
-        </nav>
+<header>
+    <h1>Chefes</h1>
+    <p>Os Provadores das Terras Intermédias</p>
+</header>
 
-        <section id="limgrave" class="region-section region-limgrave">
-            <div class="region-header">
-                <span class="region-label">Região inicial</span>
-                <h2>Limgrave</h2>
-                <p>As primeiras provações do Maculado começam nas terras verdes de Limgrave.</p>
-            </div>
+<main class="bosses-page">
 
-            <div class="boss-grid">
-                <article class="boss-card">
-                    <h3>Margit, o Agouro Caído</h3>
-                    <p>Primeiro grande teste de habilidade do jogador.</p>
-                    <ul>
-                        <li><strong>Local:</strong> Castelo Tempesvéu</li>
-                        <li><strong>Dificuldade:</strong> Média</li>
-                        <li><strong>Recompensa:</strong> Bolsa de Talismã</li>
+    <nav class="region-menu" aria-label="Regiões">
+        <a href="#limgrave">Limgrave</a>
+        <a href="#liurnia">Liurnia</a>
+        <a href="#caelid">Caelid</a>
+    </nav>
+
+    <!-- ══════════ LIMGRAVE ══════════ -->
+    <section id="limgrave" class="region-section region-limgrave">
+        <div class="region-header">
+            <span class="region-label">Região Inicial</span>
+            <h2>Limgrave</h2>
+            <p>As verdes planícies de Limgrave são o primeiro teste do Maculado. Deceptivamente belas, escondem guerreiros de bronze, cavaleiros sem cabeça e os portões do imponente Castelo Tempesvéu — primeiro bastião dos Semideuses. A região funciona como um tutorial não linear: cada confronto ensinará algo sobre timing, paciência e leitura de movimentos.</p>
+        </div>
+
+        <div class="boss-grid">
+
+            <!-- Margit -->
+            <article class="boss-card">
+                <h3>Margit, o Agouro Caído</h3>
+
+                <div class="boss-tags">
+                    <span class="boss-tag tag-dificuldade-media">Dificuldade: Média</span>
+                    <span class="boss-tag tag-obrigatorio">Obrigatório</span>
+                </div>
+
+                <p class="boss-desc">Guardião implacável que barra a entrada ao Castelo Tempesvéu. Margit é a primeira parede de dificuldade real do jogo — um chefe criado para ensinar ao jogador que pressa é inimiga da sobrevivência. Seu cajado fantasmal e sua faca de luz sagrada chegam de ângulos imprevisíveis.</p>
+
+                <details class="boss-details">
+                    <summary>Detalhes de combate</summary>
+
+                    <div class="boss-info-grid">
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Localização</span>
+                            <span class="boss-info-value">Estrada ao Castelo Tempesvéu</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Runas</span>
+                            <span class="boss-info-value">12.000</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Fraqueza</span>
+                            <span class="boss-info-value">Sagrado, Serrilhado (Margit's Shackle)</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Resistência</span>
+                            <span class="boss-info-value">Magia, Fogo, Relâmpago</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Queda</span>
+                            <span class="boss-info-value">Bolsa de Talismã</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Lembrança</span>
+                            <span class="boss-info-value">Não possui</span>
+                        </div>
+                    </div>
+
+                    <h4>Fases da Luta</h4>
+                    <ol class="boss-fases">
+                        <li><strong>Fase 1 (100–65% HP):</strong> Combinações lentas com o cajado; fintas com a garra. Ele telegrafa muito os ataques — use a janela após o golpe de três partes.</li>
+                        <li><strong>Fase 2 (abaixo de 65% HP):</strong> Invoca uma faca de luz sagrada e um martelo fantasmal. Os ataques combinados cruzam o hitbox; role para o lado e não para trás.</li>
+                    </ol>
+
+                    <h4>Dicas Essenciais</h4>
+                    <ul class="boss-tips">
+                        <li>Use o item <strong>Margit's Shackle</strong> (comprado com Patches por 5.000 Runas) para prendê-lo brevemente duas vezes na Fase 1.</li>
+                        <li>Invoque <strong>Rogier</strong> (Sinal próximo à entrada) para dividir a atenção do chefe.</li>
+                        <li>O golpe de salto com cajado tem delay longo — role no momento do impacto, não no início da animação.</li>
+                        <li>Fique próximo da coxa esquerda dele: a maioria dos ataques vai passar por cima de você.</li>
+                        <li>Poções de Sangramento (Bloodboil Aromatic) aceleram significativamente o combate.</li>
                     </ul>
-                </article>
+                </details>
+            </article>
 
-                <article class="boss-card">
-                    <h3>Godrick, o Enxertado</h3>
-                    <p>Senhor do Castelo Tempesvéu e portador de uma Grande Runa.</p>
-                    <ul>
-                        <li><strong>Local:</strong> Castelo Tempesvéu</li>
-                        <li><strong>Dificuldade:</strong> Alta</li>
-                        <li><strong>Recompensa:</strong> Grande Runa de Godrick</li>
+            <!-- Godrick -->
+            <article class="boss-card">
+                <h3>Godrick, o Enxertado</h3>
+
+                <div class="boss-tags">
+                    <span class="boss-tag tag-dificuldade-alta">Dificuldade: Alta</span>
+                    <span class="boss-tag tag-obrigatorio">Obrigatório</span>
+                </div>
+
+                <p class="boss-desc">Senhor degenerado do Castelo Tempesvéu e portador da Grande Runa de Godrick. Descendente menor da linhagem de Marika, Godrick obcecou-se em enxertar membros de inimigos caídos em seu próprio corpo — um símbolo de fraqueza mascarada de monstruosidade. Sua arena é cercada pelos corpos de guerreiros que o precederam.</p>
+
+                <details class="boss-details">
+                    <summary>Detalhes de combate</summary>
+
+                    <div class="boss-info-grid">
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Localização</span>
+                            <span class="boss-info-value">Trono do Castelo Tempesvéu</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Runas</span>
+                            <span class="boss-info-value">20.000</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Fraqueza</span>
+                            <span class="boss-info-value">Relâmpago, Sagrado</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Resistência</span>
+                            <span class="boss-info-value">Fogo (Fase 2), Sangramento</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Queda</span>
+                            <span class="boss-info-value">Lembrança de Godrick, Grande Runa de Godrick, 20.000 Runas</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Lembrança</span>
+                            <span class="boss-info-value">Axe of Godrick OU Grafted Dragon</span>
+                        </div>
+                    </div>
+
+                    <h4>Fases da Luta</h4>
+                    <ol class="boss-fases">
+                        <li><strong>Fase 1 (100–50% HP):</strong> Combos com o Godrick's Axe e enxertos de braços. Ataques lentos mas com enorme área. Fique no espaço entre os braços para punir os golpes de baixo para cima.</li>
+                        <li><strong>Fase 2 (abaixo de 50% HP):</strong> Godrick decepita o próprio braço e enxerta a cabeça de um Dragão Enxertado. Passa a usar sopros de fogo e ataques que cobrem quase toda a arena. Corra em linha reta para longe dos sopros de fogo — não role para os lados.</li>
+                    </ol>
+
+                    <h4>Dicas Essenciais</h4>
+                    <ul class="boss-tips">
+                        <li>Invoque <strong>Nepheli Loux</strong> — o sinal dela está logo antes da porta da arena. Ela prende a atenção de Godrick com eficiência.</li>
+                        <li>Durante o sopro de fogo da Fase 2, corra diretamente para longe; ao terminar o sopro, corra de volta para punir.</li>
+                        <li>O rodar de Godrick com o machado tem uma janela enorme de punição logo após o terceiro golpe.</li>
+                        <li>Armas com dano de Relâmpago causam bônus significativo em ambas as fases.</li>
+                        <li>A Graça Guia não some durante a transição de fases — use o tempo de cutscene para consumir uma Estus.</li>
                     </ul>
-                </article>
-            </div>
-        </section>
+                </details>
+            </article>
 
-        <section id="liurnia" class="region-section region-liurnia">
-            <div class="region-header">
-                <span class="region-label">Terra dos estudiosos</span>
-                <h2>Liurnia dos Lagos</h2>
-                <p>Uma região tomada por magia, névoa e ruínas ligadas à Academia de Raya Lucaria.</p>
-            </div>
+            <!-- Cavaleiro Árvore da Morte -->
+            <article class="boss-card">
+                <h3>Cavaleiro Árvore da Morte</h3>
 
-            <div class="boss-grid">
-                <article class="boss-card">
-                    <h3>Lobo Vermelho de Radagon</h3>
-                    <p>Uma criatura ágil que mistura ataques físicos com feitiçaria.</p>
-                    <ul>
-                        <li><strong>Local:</strong> Academia de Raya Lucaria</li>
-                        <li><strong>Dificuldade:</strong> Média</li>
-                        <li><strong>Recompensa:</strong> Pedra de Memória</li>
+                <div class="boss-tags">
+                    <span class="boss-tag tag-dificuldade-media">Dificuldade: Média</span>
+                    <span class="boss-tag tag-opcional">Opcional</span>
+                </div>
+
+                <p class="boss-desc">Guardião corrompido de uma Árvore da Morte em Limgrave. Este cavaleiro caído ainda empunha a espada sagrada com maestria implacável. A morte a seus pés libera uma substância esverdeada — o lamento da Erdtree pelo que foi perdido.</p>
+
+                <details class="boss-details">
+                    <summary>Detalhes de combate</summary>
+
+                    <div class="boss-info-grid">
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Localização</span>
+                            <span class="boss-info-value">Cemitério de Limgrave / Stormgate</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Runas</span>
+                            <span class="boss-info-value">3.200</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Fraqueza</span>
+                            <span class="boss-info-value">Sagrado, Fogo</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Resistência</span>
+                            <span class="boss-info-value">Magia, Escuridão</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Queda</span>
+                            <span class="boss-info-value">Sapling of the Erdtree (Gravebird Talisman)</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Lembrança</span>
+                            <span class="boss-info-value">Não possui</span>
+                        </div>
+                    </div>
+
+                    <h4>Dicas Essenciais</h4>
+                    <ul class="boss-tips">
+                        <li>Mantenha distância média e espere ele avançar — todos os seus ataques são de curto alcance.</li>
+                        <li>O pulo com a espada erguida é seu ataque mais perigoso: role imediatamente ao ver a animação de salto.</li>
+                        <li>Óleo Sagrado nas suas armas aumenta o dano cerca de 20% contra ele.</li>
+                        <li>Estreitar o espaço entre vocês após cada golpe seu é a estratégia mais segura.</li>
                     </ul>
-                </article>
+                </details>
+            </article>
 
-                <article class="boss-card">
-                    <h3>Rennala, Rainha da Lua Cheia</h3>
-                    <p>Uma chefe focada em magia e uma das figuras centrais da história da academia.</p>
-                    <ul>
-                        <li><strong>Local:</strong> Grande Biblioteca de Raya Lucaria</li>
-                        <li><strong>Dificuldade:</strong> Média</li>
-                        <li><strong>Recompensa:</strong> Grande Runa dos Não Nascidos</li>
+        </div>
+    </section>
+
+    <!-- ══════════ LIURNIA ══════════ -->
+    <section id="liurnia" class="region-section region-liurnia">
+        <div class="region-header">
+            <span class="region-label">Terra dos Estudiosos</span>
+            <h2>Liurnia dos Lagos</h2>
+            <p>Um vasto labirinto de pântanos, nevoeiros mágicos e ruínas da Academia de Raya Lucaria. A região é governada pela memória de Rennala, e impregnada pela obsessão dos estudiosos com o Lua-Estrelada. Aqui, magia e tragédia coexistem em cada arco e coluna submersa. Os lagos escondem tanto tesouros quanto criaturas que nunca deveriam ter existido.</p>
+        </div>
+
+        <div class="boss-grid">
+
+            <!-- Lobo Vermelho -->
+            <article class="boss-card">
+                <h3>Lobo Vermelho de Radagon</h3>
+
+                <div class="boss-tags">
+                    <span class="boss-tag tag-dificuldade-media">Dificuldade: Média</span>
+                    <span class="boss-tag tag-obrigatorio">Obrigatório</span>
+                </div>
+
+                <p class="boss-desc">Criatura de poder sobrenatural criada como guardião da Academia. O Lobo Vermelho de Radagon mistura ataques físicos brutais com feitiçaria, saltando pela arena a velocidades que desafiam a percepção. É um teste de reflexo antes do confronto principal com a Rainha.</p>
+
+                <details class="boss-details">
+                    <summary>Detalhes de combate</summary>
+
+                    <div class="boss-info-grid">
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Localização</span>
+                            <span class="boss-info-value">Academia de Raya Lucaria — Sala do Debate</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Runas</span>
+                            <span class="boss-info-value">13.000</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Fraqueza</span>
+                            <span class="boss-info-value">Relâmpago, Sagrado, Sangramento</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Resistência</span>
+                            <span class="boss-info-value">Magia, Congelamento</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Queda</span>
+                            <span class="boss-info-value">Pedra de Memória, 13.000 Runas</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Lembrança</span>
+                            <span class="boss-info-value">Não possui</span>
+                        </div>
+                    </div>
+
+                    <h4>Fases da Luta</h4>
+                    <ol class="boss-fases">
+                        <li><strong>Fase 1 (100–50% HP):</strong> Ataques de garra, mordida e saltos. Conjura espadas mágicas flutuantes que dispara em série. Fique agressivo nos intervalos entre saltos.</li>
+                        <li><strong>Fase 2 (abaixo de 50% HP):</strong> Torna-se ainda mais veloz e começa a conjurar salvas de feitiços enquanto recua. Priorize chegar perto e pressionar o flanco esquerdo.</li>
+                    </ol>
+
+                    <h4>Dicas Essenciais</h4>
+                    <ul class="boss-tips">
+                        <li>Armas com Sangramento são altamente eficazes — a barra de hemorragia acumula rapidamente.</li>
+                        <li>Fique próximo: a maioria dos feitiços erram ou passam por cima de você em distância zero.</li>
+                        <li>Quando ele recua e começa a conjurar salvas de magia, role lateralmente em direção a ele.</li>
+                        <li>A invocação de Ashes de cavaleiros pesados (como Crucible Knight) segura bem a atenção do Lobo.</li>
                     </ul>
-                </article>
-            </div>
-        </section>
+                </details>
+            </article>
 
-        <section id="caelid" class="region-section region-caelid">
-            <div class="region-header">
-                <span class="region-label">Terra corrompida</span>
-                <h2>Caelid</h2>
-                <p>Uma região devastada pela podridão escarlate, marcada por batalhas brutais.</p>
-            </div>
+            <!-- Rennala -->
+            <article class="boss-card">
+                <h3>Rennala, Rainha da Lua Cheia</h3>
 
-            <div class="boss-grid">
-                <article class="boss-card">
-                    <h3>General Radahn</h3>
-                    <p>Um dos semideuses mais poderosos, enfrentado em um festival de combate.</p>
-                    <ul>
-                        <li><strong>Local:</strong> Castelo da Juba Vermelha</li>
-                        <li><strong>Dificuldade:</strong> Alta</li>
-                        <li><strong>Recompensa:</strong> Grande Runa de Radahn</li>
+                <div class="boss-tags">
+                    <span class="boss-tag tag-dificuldade-media">Dificuldade: Média</span>
+                    <span class="boss-tag tag-obrigatorio">Obrigatório</span>
+                </div>
+
+                <p class="boss-desc">Mestre da Academia de Raya Lucaria, outrora esposa de Radagon e mãe de três Semideuses: Ranni, Radahn e Rykard. Após ser abandonada por Radagon quando ele partiu para casar com Marika, Rennala reclinou-se na Grande Biblioteca, embrulhada pelo amor dos seus estudantes leais — e pela loucura. Ela não é uma antagonista, mas uma figura tragicamente quebrada.</p>
+
+                <details class="boss-details">
+                    <summary>Detalhes de combate</summary>
+
+                    <div class="boss-info-grid">
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Localização</span>
+                            <span class="boss-info-value">Grande Biblioteca de Raya Lucaria</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Runas</span>
+                            <span class="boss-info-value">40.000</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Fraqueza</span>
+                            <span class="boss-info-value">Nenhuma elemental (dano físico é mais eficaz na Fase 2)</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Resistência</span>
+                            <span class="boss-info-value">Magia, Todos os elementais (Fase 2)</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Queda</span>
+                            <span class="boss-info-value">Lembrança de Rennala, Grande Runa dos Não Nascidos</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Lembrança</span>
+                            <span class="boss-info-value">Rennala's Full Moon OU Rennala's Staff</span>
+                        </div>
+                    </div>
+
+                    <h4>Fases da Luta</h4>
+                    <ol class="boss-fases">
+                        <li><strong>Fase 1 — O Escudo Dourado:</strong> Rennala flutua no centro enquanto estudantes cantam em volta. Localize os estudantes com aura dourada (eles brilham levemente), ataque-os para quebrar o escudo. Após três quebramentos, ela cai. Bata enquanto ela está no chão. Repita três vezes até a transição.</li>
+                        <li><strong>Fase 2 — Rainha da Lua Cheia:</strong> Arena aberta e mágica. Rennala usa a Lua Cheia (bola de magia massiva que persegue o jogador), feitiços de lâminas de Glintstone e invoca criaturas. A Lua Cheia causa status de Fraqueza Mágica — use armadura com alta resistência a Magia. Role para o lado quando ela começar a animação da Lua.</li>
+                    </ol>
+
+                    <h4>Dicas Essenciais</h4>
+                    <ul class="boss-tips">
+                        <li>Na Fase 1, ignore os estudantes comuns e procure o brilho dourado — só esses contam para quebrar o escudo.</li>
+                        <li>Na Fase 2, aproxime-se sempre que ela invocar criaturas; enquanto invoca, ela fica vulnerável.</li>
+                        <li>A Lua Cheia é lenta — comece a rolar bem antes dela chegar. Ela aplica debuff de Defesa Mágica, cure com leite de Estus.</li>
+                        <li>Rennala é a única chefe principal que permite <strong>Renascer</strong> (redistribuir atributos) após ser derrotada — preserve a Grande Runa dos Não Nascidos.</li>
                     </ul>
-                </article>
-            </div>
-        </section>
+                </details>
+            </article>
 
-    </main>
+            <!-- Royal Knight Loretta -->
+            <article class="boss-card">
+                <h3>Cavaleira Real Loretta</h3>
 
-    <footer>
-        <p>&copy; 2026 O Guia do Maculado - Projeto Json</p>
-    </footer>
+                <div class="boss-tags">
+                    <span class="boss-tag tag-dificuldade-media">Dificuldade: Média</span>
+                    <span class="boss-tag tag-opcional">Opcional</span>
+                </div>
 
-    <script src="script.js"></script>
+                <p class="boss-desc">Guardiã espectral das Árvores de Haligtree em Liurnia. Loretta era uma cavaleira de espírito nobre que dedicou sua existência a proteger Ranni antes de sua partida. Agora, sua forma fantasmal permanece fiel ao juramento, montada em seu corcel de luz.</p>
+
+                <details class="boss-details">
+                    <summary>Detalhes de combate</summary>
+
+                    <div class="boss-info-grid">
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Localização</span>
+                            <span class="boss-info-value">Mansão Caria</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Runas</span>
+                            <span class="boss-info-value">10.000</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Fraqueza</span>
+                            <span class="boss-info-value">Fogo, Sangramento</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Resistência</span>
+                            <span class="boss-info-value">Magia, Sagrado</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Queda</span>
+                            <span class="boss-info-value">Loretta's Greatbow (feitiçaria), Acesso à Torre de Ranni</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Lembrança</span>
+                            <span class="boss-info-value">Não possui</span>
+                        </div>
+                    </div>
+
+                    <h4>Dicas Essenciais</h4>
+                    <ul class="boss-tips">
+                        <li>Fique próximo do cavalo para evitar o bombardeio de flechas mágicas de longa distância.</li>
+                        <li>Após cada galope com lança, ela fica vulnerável por ~2 segundos — sua janela de punição mais segura.</li>
+                        <li>Derrotá-la abre o caminho para a quest de Ranni — uma das mais ricas da narrativa.</li>
+                    </ul>
+                </details>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ══════════ CAELID ══════════ -->
+    <section id="caelid" class="region-section region-caelid">
+        <div class="region-header">
+            <span class="region-label">Terra Corrompida</span>
+            <h2>Caelid</h2>
+            <p>Caelid é a ferida aberta das Terras Intermédias — um deserto tingido de vermelho pela Podridão Escarlate, consequência direta do confronto entre Malenia e Radahn. O céu permanece cárdeo, o solo é mole como carne e as criaturas que sobreviveram à Podridão tornaram-se aberrações. Entrar em Caelid despreparado é uma sentença de morte. Mas as recompensas — e os chefes — são proporcionais ao perigo.</p>
+        </div>
+
+        <div class="boss-grid">
+
+            <!-- Starscourge Radahn -->
+            <article class="boss-card">
+                <h3>Radahn, Flagelo das Estrelas</h3>
+
+                <div class="boss-tags">
+                    <span class="boss-tag tag-dificuldade-alta">Dificuldade: Alta</span>
+                    <span class="boss-tag tag-obrigatorio">Obrigatório*</span>
+                </div>
+
+                <p class="boss-desc">General Radahn, filho de Rennala e Radagon, é um dos três Semideuses mais temidos das Terras Intermédias. Mestre da gravidade e da cavalaria, ele estudou gravitação com os Alabastrinos para não pesar sobre seu cavalo amado, Leonard. Caelid foi o palco da batalha que o destruiu — e a Podridão Escarlate que o corroeu deixou apenas um casulo de instintos selvagens onde um herói existia. O Festival de Radahn foi organizado por Jerren para lhe dar morte honrosa em combate.</p>
+
+                <details class="boss-details">
+                    <summary>Detalhes de combate</summary>
+
+                    <div class="boss-info-grid">
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Localização</span>
+                            <span class="boss-info-value">Praia de Caelid — Castelo da Juba Vermelha</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Runas</span>
+                            <span class="boss-info-value">70.000</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Fraqueza</span>
+                            <span class="boss-info-value">Sagrado, Sangramento (moderado)</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Resistência</span>
+                            <span class="boss-info-value">Magia, Podridão Escarlate, Veneno</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Queda</span>
+                            <span class="boss-info-value">Lembrança de Radahn, Grande Runa de Radahn, 70.000 Runas</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Lembrança</span>
+                            <span class="boss-info-value">Starscourge Greatsword OU Lion Greatbow</span>
+                        </div>
+                    </div>
+
+                    <h4>Fases da Luta</h4>
+                    <ol class="boss-fases">
+                        <li><strong>Fase 1 — O Festival:</strong> Arena aberta com aliados invocáveis (Blaidd, Alexander, Jerren, entre outros). Radahn usa arcos de gravidade de longo alcance, carga de cavalaria e fragmentos de meteoro. Monte o corcel fantasmal (os espíritos da arena) para cobrir distância rapidamente. Invoque todos os aliados disponíveis.</li>
+                        <li><strong>Fase 2 — Meteoro:</strong> Radahn cai do céu como um meteorito após atingir ~50% HP. A explosão do impacto cobre grande área — rode imediatamente ao ver ele subir. Ele retorna com combos mais agressivos e velocidade ampliada, misturando gravidade e ataques físicos com hitboxes expandidas.</li>
+                    </ol>
+
+                    <h4>Dicas Essenciais</h4>
+                    <ul class="boss-tips">
+                        <li>Invoque <strong>todos</strong> os aliados disponíveis ao entrar na arena — eles são a chave para dividir a atenção de Radahn.</li>
+                        <li>Monte o corcel espectral (pressione Invocar ao passar pelos cavalos fantasmas) para alcançar Radahn rapidamente e esquivar das flechas.</li>
+                        <li>Durante o Meteoro (Fase 2), rode em direção a onde ele estava antes de subir — o impacto tem área radial, não persecutória.</li>
+                        <li>Armas com dano Sagrado são as mais eficientes; Selos de Fé com bênçãos de dano sagrado funcionam bem.</li>
+                        <li>Se os aliados morrerem, corra de volta para os sinais e reinvoque — eles respawnam durante a luta.</li>
+                        <li>Seu ataque de "chuva de meteoros" mira em você: role entre os meteoros, nunca em linha reta.</li>
+                    </ul>
+                </details>
+            </article>
+
+            <!-- Malenia (bônus) -->
+            <article class="boss-card">
+                <h3>Malenia, Lâmina de Miquella</h3>
+
+                <div class="boss-tags">
+                    <span class="boss-tag tag-dificuldade-alta">Dificuldade: Extrema</span>
+                    <span class="boss-tag tag-opcional">Opcional</span>
+                </div>
+
+                <p class="boss-desc">Considerada pelo fandom como o chefe mais difícil de Elden Ring. Malenia é a filha cega de Marika portadora da Podridão Escarlate — uma maldição que a consome lentamente. Cada golpe que ela acerta, independente de bloqueio ou esquiva, restaura parte de seu HP. Sua dança de flores é instantânea e devastadora.</p>
+
+                <details class="boss-details">
+                    <summary>Detalhes de combate</summary>
+
+                    <div class="boss-info-grid">
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Localização</span>
+                            <span class="boss-info-value">Torre de Élphael, Braçadeira da Haligtree</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Runas</span>
+                            <span class="boss-info-value">480.000</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Fraqueza</span>
+                            <span class="boss-info-value">Fogo, Sangramento, Geladura</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Resistência</span>
+                            <span class="boss-info-value">Podridão Escarlate, Veneno, Magia</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Queda</span>
+                            <span class="boss-info-value">Lembrança de Malenia, Miquella's Needle</span>
+                        </div>
+                        <div class="boss-info-item">
+                            <span class="boss-info-label">Lembrança</span>
+                            <span class="boss-info-value">Hand of Malenia OU Scarlet Aeonia</span>
+                        </div>
+                    </div>
+
+                    <h4>Fases da Luta</h4>
+                    <ol class="boss-fases">
+                        <li><strong>Fase 1 — A Lâmina:</strong> Combos rápidos com espada, dive kicks e a <em>Waterfowl Dance</em> (sua sequência de cinco golpes em dashes). Ela cura a cada acerto — nunca leve golpe desnecessário. Role para longe no primeiro dash da Waterfowl Dance, depois role agressivamente <em>para dentro</em> dela para o segundo grupo.</li>
+                        <li><strong>Fase 2 — A Deusa da Podridão:</strong> Malenia germina em um jardim de flores escarlates e desenvolve asas. Novos ataques incluem Clone Dive (ela aparece do teto repetidas vezes) e a explosão de Scarlet Aeonia (se acertar você, aplica Podridão Escarlate instantaneamente).</li>
+                    </ol>
+
+                    <h4>Dicas Essenciais</h4>
+                    <ul class="boss-tips">
+                        <li>O timing da <strong>Waterfowl Dance</strong> é o maior desafio do jogo: role para longe no primeiro grupo, depois role duas vezes para <em>dentro</em> do segundo grupo para sair ileso.</li>
+                        <li>Use <strong>Black Knife Tiche</strong> como espírito — ela esquiva dos ataques de Malenia por conta própria e causa bom dano.</li>
+                        <li>Mantenha sempre Antídoto Escarlate pronto para a Fase 2.</li>
+                        <li>Fogo é a fraqueza mais confiável — Flask of Wondrous Physick com Flame-Shrouding Cracked Tear é muito recomendado.</li>
+                        <li>Não bloqueie — o lifesteal dela atravessa escudos. Esquiva é obrigatória.</li>
+                    </ul>
+                </details>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 O Guia do Maculado &mdash; Projeto Json</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

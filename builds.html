@@ -3,98 +3,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Builds - O Guia do Maculado</title>
-    <meta name="description" content="Builds de Elden Ring para força, bleed e mais, com dicas de armas e atributos.">
+    <title>Builds — O Guia do Maculado</title>
+    <meta name="description" content="Guias completos de builds de Elden Ring: tabelas de atributos, armas, Cinzas da Guerra, Talismãs e combos para cada estilo de jogo.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="builds-page">
-    <a href="index.html" class="voltar-home" aria-label="Voltar para a página principal">← Início</a>
 
-    <header>
-        <h1>Builds</h1>
-        <p>Forje o seu caminho pelas Terras Intermédias.</p>
-    </header>
+<a href="index.html" class="voltar-home" aria-label="Voltar para a página principal">← Início</a>
 
-    <main class="container">
+<header>
+    <h1>Builds</h1>
+    <p>Forje o seu caminho pelas Terras Intermédias</p>
+</header>
 
-        <section class="builds-listas">
+<main class="container">
+    <section class="builds-listas">
 
-           <article class="build-card">
-    <h2>Builds de Força</h2>
-    <p>Build ideal para jogadores que preferem armas pesadas e combate corpo a corpo.</p>
+        <!-- ══════════════════════════════════════════
+             CARD 1 — FORÇA (COLOSSAL STRENGTH)
+        ══════════════════════════════════════════ -->
+        <article class="build-card">
+            <h2>Colossal Strength</h2>
+            <p>A build definitiva para quem quer sentir o peso de cada golpe. Armas colossais impõem Posturas quebradas nos inimigos com facilidade, abrindo janelas devastadoras para ataques críticos. Alta sobrevivência, dano por golpe absurdo, mas mobilidade reduzida — cada movimento deve ser intencional.</p>
 
-    <button type="button" class="abrir-modal" data-modal="modal-forca">
-        Ver detalhes
-    </button>
-</article>
+            <span class="build-section-label">Classe Recomendada</span>
+            <ul>
+                <li><strong>Hero</strong> — começa com Força 16 e Vigor 14, base ideal.</li>
+                <li>Alternativa: <strong>Vagabond</strong> para mais Vigor inicial.</li>
+            </ul>
 
-<article class="build-card">
-    <h2>Builds de Bleed</h2>
-    <p>Build ideal para jogadores que preferem agilidade, ataques rápidos e sangramento.</p>
+            <span class="build-section-label">Atributos — Nível ~150</span>
+            <table class="atributos-table">
+                <thead>
+                    <tr><th>Atributo</th><th>Valor Alvo</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Vigor</td><td>60</td></tr>
+                    <tr><td>Mente</td><td>15</td></tr>
+                    <tr><td>Resistência</td><td>30</td></tr>
+                    <tr><td>Força</td><td>80</td></tr>
+                    <tr><td>Destreza</td><td>12</td></tr>
+                    <tr><td>Inteligência</td><td>9</td></tr>
+                    <tr><td>Fé</td><td>9</td></tr>
+                    <tr><td>Arcano</td><td>9</td></tr>
+                </tbody>
+            </table>
 
-    <button type="button" class="abrir-modal" data-modal="modal-bleed">
-        Ver detalhes
-    </button>
-</article>
-        </section>
-    </main>
-    
-    <div class="modal" id="modal-forca" role="dialog" aria-modal="true" aria-labelledby="modal-forca-title">
+            <span class="build-section-label">Armas</span>
+            <ul>
+                <li><strong>Principal:</strong> Blasphemous Blade — escala com Força e Fé, cura a cada morte e possui a Ash of War Taker's Flames.</li>
+                <li><strong>Alternativa:</strong> Giant-Crusher — a maior escala de Força do jogo; bônus de 80 Força é fenomenal.</li>
+                <li><strong>Off-hand:</strong> Jellyfish Shield ou Golden Greatshield para bloqueio crítico.</li>
+            </ul>
+
+            <span class="build-section-label">Cinzas da Guerra (Ash of War)</span>
+            <ul>
+                <li><strong>Taker's Flames</strong> (nativa da Blasphemous Blade) — dano de fogo em área + lifesteal.</li>
+                <li><strong>Stamp (Upward Cut)</strong> — ideal no Giant-Crusher para combo agressor.</li>
+                <li><strong>Lion's Claw</strong> — Ash de Força clássica para quebrar postura em 2 hits.</li>
+            </ul>
+
+            <span class="build-section-label">Talismãs</span>
+            <ul>
+                <li><strong>Shard of Alexander</strong> — +15% dano de Ash of War. Imprescindível.</li>
+                <li><strong>Great Jar's Arsenal</strong> — aumenta carga de equipamento, permite armadura pesada sem penalidade.</li>
+                <li><strong>Erdtree's Favor +2</strong> — bônus de HP, Stamina e carga.</li>
+                <li><strong>Dragoncrest Greatshield Talisman</strong> — reduz dano físico recebido em 20%.</li>
+            </ul>
+
+            <span class="build-section-label">Frasco Magnífico (Physick Flask)</span>
+            <ul>
+                <li><strong>Stonebarb Cracked Tear</strong> — facilita quebra de postura.</li>
+                <li><strong>Crimsonburst Crystal Tear</strong> — regeneração passiva de HP.</li>
+            </ul>
+
+            <span class="build-section-label">Como obter a Blasphemous Blade</span>
+            <ul>
+                <li>Derrote <strong>Rykard, Senhor da Blasfêmia</strong> na Mansão Vulcânica.</li>
+                <li>Leve a Lembrança do Blasfemo ao Enia nas Mesas Redondas.</li>
+                <li>Troque pela arma — não venda a Lembrança.</li>
+            </ul>
+
+            <button type="button" class="abrir-modal" data-modal="modal-forca">
+                <span>Ver guia completo</span>
+            </button>
+        </article>
+
+        <!-- ══════════════════════════════════════════
+             CARD 2 — BLEED (RIVERS OF BLOOD)
+        ══════════════════════════════════════════ -->
+        <article class="build-card">
+            <h2>Rivers of Blood</h2>
+            <p>A build de Sangramento mais icônica de Elden Ring. Usa Destreza e Arcano para acumular hemorragia em velocidade absurda, causando explosões de dano proporcional ao HP máximo do inimigo. Extremamente eficaz contra chefes com muita vida — incluindo muitos opcionais de alto nível.</p>
+
+            <span class="build-section-label">Classe Recomendada</span>
+            <ul>
+                <li><strong>Samurai</strong> — começa com Katana e Destreza 13, ideal para evoluir para Rivers of Blood.</li>
+                <li>Alternativa: <strong>Wretch</strong> para otimização máxima de atributos.</li>
+            </ul>
+
+            <span class="build-section-label">Atributos — Nível ~150</span>
+            <table class="atributos-table">
+                <thead>
+                    <tr><th>Atributo</th><th>Valor Alvo</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Vigor</td><td>60</td></tr>
+                    <tr><td>Mente</td><td>20</td></tr>
+                    <tr><td>Resistência</td><td>20</td></tr>
+                    <tr><td>Força</td><td>12</td></tr>
+                    <tr><td>Destreza</td><td>18</td></tr>
+                    <tr><td>Inteligência</td><td>9</td></tr>
+                    <tr><td>Fé</td><td>9</td></tr>
+                    <tr><td>Arcano</td><td>60</td></tr>
+                </tbody>
+            </table>
+
+            <span class="build-section-label">Armas</span>
+            <ul>
+                <li><strong>Principal MH:</strong> Rivers of Blood — katana com Arcano; sua Ash of War Corpse Piler é a mais temida do jogo.</li>
+                <li><strong>Principal OH (Dual Wield):</strong> Uchigatana ou Nagakiba com infusão Blood + Arcano.</li>
+                <li><strong>Alternativa:</strong> Mohgwyn's Sacred Spear para variante de Faith/Arcano.</li>
+            </ul>
+
+            <span class="build-section-label">Cinzas da Guerra (Ash of War)</span>
+            <ul>
+                <li><strong>Corpse Piler</strong> (nativa do Rivers of Blood) — série de golpes rápidos que acumula sangramento em 1–2 usos.</li>
+                <li><strong>Blood Blade</strong> — alternativa econômica para a Uchigatana off-hand.</li>
+                <li><strong>Seppuku</strong> — inflige Sangramento no próprio usuário para boostar dano de hemorragia; use antes do combate.</li>
+            </ul>
+
+            <span class="build-section-label">Talismãs</span>
+            <ul>
+                <li><strong>Lord of Blood's Exultation</strong> — +20% ataque por 20s quando Sangramento ocorre. Essencial.</li>
+                <li><strong>Millicent's Prosthesis</strong> — +5 Destreza + buff de ataque por golpes consecutivos.</li>
+                <li><strong>Shard of Alexander</strong> — amplifica Corpse Piler massivamente.</li>
+                <li><strong>Claw Talisman</strong> — +15% dano de golpe de salto para variar o combo.</li>
+            </ul>
+
+            <span class="build-section-label">Frasco Magnífico (Physick Flask)</span>
+            <ul>
+                <li><strong>Bloodboil Aromatic Cracked Tear</strong> — potencializa dano de sangramento por 3 minutos.</li>
+                <li><strong>Thorny Cracked Tear</strong> — aumenta dano progressivamente com ataques consecutivos.</li>
+            </ul>
+
+            <span class="build-section-label">Como obter o Rivers of Blood</span>
+            <ul>
+                <li>Derrote <strong>Okina Dedo Sangrento</strong> — NPC invasor que aparece na Igreja do Repouso, nos Cumes dos Gigantes.</li>
+                <li><strong>Atenção:</strong> Okina só invade <em>antes</em> de derrotar o Gigante de Fogo — após esse ponto, a arma fica inacessível naquele ciclo.</li>
+                <li>A arma cai diretamente após derrotar Okina, sem necessidade de troca.</li>
+            </ul>
+
+            <button type="button" class="abrir-modal" data-modal="modal-bleed">
+                <span>Ver guia completo</span>
+            </button>
+        </article>
+
+        <!-- ══════════════════════════════════════════
+             CARD 3 — MAGO (FULL INT SORCERER)
+        ══════════════════════════════════════════ -->
+        <article class="build-card">
+            <h2>Astrologer Sorcerer</h2>
+            <p>A build de Inteligência pura. Devastação à distância, habilidade de congelar inimigos e acesso às feitiçarias mais poderosas das Terras Intermédias. Requer conhecimento dos timings para executar magias com segurança, mas o dano potencial supera quase todos os estilos de jogo.</p>
+
+            <span class="build-section-label">Classe Recomendada</span>
+            <ul>
+                <li><strong>Astrologer</strong> — Inteligência inicial 16, começa com Glintstone Pebble e Arc.</li>
+            </ul>
+
+            <span class="build-section-label">Atributos — Nível ~150</span>
+            <table class="atributos-table">
+                <thead>
+                    <tr><th>Atributo</th><th>Valor Alvo</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Vigor</td><td>55</td></tr>
+                    <tr><td>Mente</td><td>40</td></tr>
+                    <tr><td>Resistência</td><td>20</td></tr>
+                    <tr><td>Força</td><td>10</td></tr>
+                    <tr><td>Destreza</td><td>16</td></tr>
+                    <tr><td>Inteligência</td><td>80</td></tr>
+                    <tr><td>Fé</td><td>9</td></tr>
+                    <tr><td>Arcano</td><td>9</td></tr>
+                </tbody>
+            </table>
+
+            <span class="build-section-label">Armas / Catalisadores</span>
+            <ul>
+                <li><strong>Lusat's Glintstone Staff</strong> — maior dano por magia do jogo, consome FP extra.</li>
+                <li><strong>Carian Regal Scepter</strong> — equilibrio ideal para magias de Full Moon.</li>
+                <li><strong>Sword of Night and Flame</strong> — opção híbrida para combate corpo a corpo.</li>
+            </ul>
+
+            <span class="build-section-label">Feitiçarias Essenciais</span>
+            <ul>
+                <li><strong>Comet Azur</strong> — o laser de dano máximo do jogo; use com Cerulean Hidden Tear para custo zero.</li>
+                <li><strong>Stars of Ruin</strong> — doze projéteis perseguem o alvo; excelente contra alvos móveis.</li>
+                <li><strong>Rock Sling</strong> — dano físico de magia, ignora resistência mágica.</li>
+                <li><strong>Ranni's Dark Moon</strong> — bola de gelo que aplica Geladura e debuff de resistência mágica.</li>
+            </ul>
+
+            <span class="build-section-label">Talismãs</span>
+            <ul>
+                <li><strong>Graven-Mass Talisman</strong> — +8% dano de feitiçarias.</li>
+                <li><strong>Magic Scorpion Charm</strong> — +12% dano de magia, +10% dano recebido de Físico.</li>
+                <li><strong>Radagon's Icon</strong> — reduz tempo de conjuração de magias.</li>
+                <li><strong>Faithful's Canvas Talisman</strong> ou <strong>Graven-School Talisman</strong> — mais bônus de feitiçaria.</li>
+            </ul>
+
+            <span class="build-section-label">Frasco Magnífico (Physick Flask)</span>
+            <ul>
+                <li><strong>Cerulean Hidden Tear</strong> — elimina custo de FP por 15s (use com Comet Azur).</li>
+                <li><strong>Magic-Shrouding Cracked Tear</strong> — +20% dano de magia por 3 minutos.</li>
+            </ul>
+
+            <button type="button" class="abrir-modal" data-modal="modal-mago">
+                <span>Ver guia completo</span>
+            </button>
+        </article>
+
+    </section>
+</main>
+
+<!-- ══════════ MODAL — FORÇA ══════════ -->
+<div class="modal" id="modal-forca" role="dialog" aria-modal="true" aria-labelledby="modal-forca-title">
     <div class="modal-content" tabindex="-1">
         <button type="button" class="fechar" aria-label="Fechar modal">&times;</button>
 
-        <h2 id="modal-forca-title">Build de Força</h2>
+        <h2 id="modal-forca-title">Guia Completo: Colossal Strength</h2>
+        <p style="color:var(--texto-muted); font-style:italic; margin-bottom:1.5rem;">Build de Força Pura · Nível Recomendado 150+</p>
 
+        <h3>Filosofia da Build</h3>
         <ul>
-            <li>Classe: Força</li>
-            <li>Arma: Blasphemous Sword</li>
-            <li>Atributos: Força, Vitalidade</li>
-            <li>Estilo: Corpo a corpo</li>
+            <li>Cada golpe deve valer. Você tem menos stamina para combos longos, então cada swing precisa ser preciso e punidor.</li>
+            <li>Quebre posturas — armas colossais derrubam a maioria dos inimigos após 2–3 hits em seqüência, abrindo para um ataque crítico devastador.</li>
+            <li>Mantenha peso de equipamento abaixo de <strong>70%</strong> para o roll médio; abaixo de <strong>100%</strong> para o roll pesado.</li>
         </ul>
 
-        <h3>Como obter</h3>
-
+        <h3>Armadura Sugerida</h3>
         <ul>
-            <li>Derrote Rykard, o Senhor da Blasfêmia.</li>
-            <li>Localização: Mansão Vulcânica.</li>
-            <li>Troque a Lembrança do Blasfemo pela arma.</li>
+            <li><strong>Bull-Goat Set</strong> — maior Robustez do jogo, reduz acúmulo de estado.</li>
+            <li>Alternativa: <strong>Royal Knight Set</strong> para equilíbrio entre defesa física e mobilidade.</li>
+            <li>Use <strong>Great Jar's Arsenal Talisman</strong> para comportar armaduras mais pesadas sem penalidade de mobilidade.</li>
+        </ul>
+
+        <h3>Progressão de Atributos</h3>
+        <table class="atributos-table">
+            <thead><tr><th>Fase do Jogo</th><th>Força</th><th>Vigor</th><th>Resistência</th></tr></thead>
+            <tbody>
+                <tr><td>Early (Nv. 40)</td><td>40</td><td>30</td><td>18</td></tr>
+                <tr><td>Mid (Nv. 80)</td><td>60</td><td>45</td><td>24</td></tr>
+                <tr><td>Late (Nv. 150)</td><td>80</td><td>60</td><td>30</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Combo Principal (Blasphemous Blade)</h3>
+        <ul>
+            <li>Heavy Attack → Heavy Attack → Taker's Flames: quebra postura na maioria dos inimigos comuns.</li>
+            <li>Jumping Heavy Attack → Taker's Flames: dano explosivo com alto ganho de postura.</li>
+            <li>Parry → Critical Strike: com o Golden Greatshield, possível em muitos humanoides.</li>
+        </ul>
+
+        <h3>Dica de Progressão</h3>
+        <ul>
+            <li>Priorize chegar a Força 54 o mais rápido possível — threshold para usar a Blasphemous Blade com duas mãos eficientemente (2H considera 1.5× o valor de Força, então 36 × 1.5 = 54).</li>
+            <li>O Giant-Crusher exige Força 60 — desbloqueie antes de otimizar outros atributos.</li>
         </ul>
     </div>
 </div>
 
+<!-- ══════════ MODAL — BLEED ══════════ -->
 <div class="modal" id="modal-bleed" role="dialog" aria-modal="true" aria-labelledby="modal-bleed-title">
     <div class="modal-content" tabindex="-1">
         <button type="button" class="fechar" aria-label="Fechar modal">&times;</button>
 
-        <h2 id="modal-bleed-title">Build de Bleed</h2>
+        <h2 id="modal-bleed-title">Guia Completo: Rivers of Blood</h2>
+        <p style="color:var(--texto-muted); font-style:italic; margin-bottom:1.5rem;">Build de Sangramento Arcano · Nível Recomendado 150+</p>
 
+        <h3>Filosofia da Build</h3>
         <ul>
-            <li>Classe: Samurai</li>
-            <li>Arma: Rivers of Blood</li>
-            <li>Atributos: Destreza, Arcano</li>
-            <li>Estilo: Combate ágil</li>
+            <li>Sangramento causa dano igual a <strong>15% do HP máximo</strong> do inimigo — por isso é lethal contra chefes com muito HP.</li>
+            <li>Arcano amplifica o acúmulo de hemorragia e o dano das armas infundidas com Blood.</li>
+            <li>Dual Wield (duas katanas) dobra a taxa de acúmulo de sangramento. É a forma mais eficiente de usar esta build.</li>
         </ul>
 
-        <h3>Como obter</h3>
-
+        <h3>Armadura Sugerida</h3>
         <ul>
-            <li>Derrote Okina Dedo Sangrento.</li>
-            <li>Localização: Igreja do Repouso, Cumes dos Gigantes.</li>
-            <li>Deve ser obtida antes de derrotar o Gigante de Fogo.</li>
+            <li><strong>White Reed Set</strong> (do Okina) — estética de samurai + boa defesa física com peso reduzido.</li>
+            <li>Alternativa: <strong>Ronin Set</strong> para visual similar e proteção balanceada.</li>
+            <li>Priorize peso leve para manter o roll rápido — mobilidade é sobrevivência nesta build.</li>
+        </ul>
+
+        <h3>Rotação de Combate</h3>
+        <ul>
+            <li>Aplique <strong>Seppuku</strong> na katana off-hand antes do combate para ativar o buff de sangramento no seu próprio personagem.</li>
+            <li>Abra com <strong>Corpse Piler</strong> (L2/LT) — geralmente acumula sangramento de 1 a 2 usos.</li>
+            <li>Após o proc de sangramento, o Talisman Lord of Blood's Exultation ativa — use esse momento para seu dano mais alto com Light Attacks e jumps.</li>
+            <li>Repita o ciclo: Corpse Piler → proc → Light Attack burst.</li>
+        </ul>
+
+        <h3>Progressão de Atributos</h3>
+        <table class="atributos-table">
+            <thead><tr><th>Fase do Jogo</th><th>Arcano</th><th>Vigor</th><th>Destreza</th></tr></thead>
+            <tbody>
+                <tr><td>Early (Nv. 40)</td><td>25</td><td>30</td><td>16</td></tr>
+                <tr><td>Mid (Nv. 80)</td><td>40</td><td>45</td><td>18</td></tr>
+                <tr><td>Late (Nv. 150)</td><td>60</td><td>60</td><td>18</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Limitações e Counters</h3>
+        <ul>
+            <li>Algumas criaturas são imunes a Sangramento: Ancestral Followers, Dragões, a maioria dos inimigos de gelo.</li>
+            <li>Para esses casos, troque para uma katana infundida com <strong>Cold</strong> (Geladura aplica debuff de resistência a magia) ou use <strong>Rock Sling</strong> como secundário.</li>
         </ul>
     </div>
 </div>
 
-    <footer>
-        <p>&copy; 2026 O Guia do Maculado - Projeto Json</p>
-    </footer>
+<!-- ══════════ MODAL — MAGO ══════════ -->
+<div class="modal" id="modal-mago" role="dialog" aria-modal="true" aria-labelledby="modal-mago-title">
+    <div class="modal-content" tabindex="-1">
+        <button type="button" class="fechar" aria-label="Fechar modal">&times;</button>
 
-    <script src="script.js"></script>
+        <h2 id="modal-mago-title">Guia Completo: Astrologer Sorcerer</h2>
+        <p style="color:var(--texto-muted); font-style:italic; margin-bottom:1.5rem;">Build de Inteligência Pura · Nível Recomendado 150+</p>
+
+        <h3>Filosofia da Build</h3>
+        <ul>
+            <li>Você é uma catedral de vidro: dano altíssimo, vida moderada. Cada erro pode ser fatal.</li>
+            <li>Aprenda os timings de conjuração de cada magia — algumas são instantâneas, outras precisam de posicionamento seguro.</li>
+            <li>Com o Radagon's Icon Talisman, a maioria das magias rápidas torna-se praticamente instantânea.</li>
+        </ul>
+
+        <h3>Armadura Sugerida</h3>
+        <ul>
+            <li><strong>Lusat's Robes</strong> — bônus de Glintstone Sorceries ao conjunto completo.</li>
+            <li>Alternativa: <strong>Snow Witch Set</strong> (de Ranni) para bônus em magias de Gelo.</li>
+            <li>Mantenha peso leve para roll rápido — você precisa de mobilidade para reposicionar entre conjurações.</li>
+        </ul>
+
+        <h3>Rotação Comet Azur (Boss Burst)</h3>
+        <ul>
+            <li>Use o <strong>Frasco Magnífico com Cerulean Hidden Tear</strong> antes de entrar na arena.</li>
+            <li>Invoque um Spirit Ash pesado para prender a atenção do chefe.</li>
+            <li>Posicione-se em linha reta com o chefe e conjure <strong>Comet Azur</strong> — o laser dura enquanto o FP zero não é atingido (Cerulean Hidden Tear garante custo zero por 15s).</li>
+            <li>Este combo pode eliminar a maioria dos chefes na Fase 1 em questão de segundos.</li>
+        </ul>
+
+        <h3>Progressão de Atributos</h3>
+        <table class="atributos-table">
+            <thead><tr><th>Fase do Jogo</th><th>Inteligência</th><th>Vigor</th><th>Mente</th></tr></thead>
+            <tbody>
+                <tr><td>Early (Nv. 40)</td><td>40</td><td>25</td><td>25</td></tr>
+                <tr><td>Mid (Nv. 80)</td><td>60</td><td>40</td><td>32</td></tr>
+                <tr><td>Late (Nv. 150)</td><td>80</td><td>55</td><td>40</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Onde Obter as Feitiçarias Essenciais</h3>
+        <ul>
+            <li><strong>Comet Azur</strong> — no canto norte de Altus Plateau, entregue pelo Primeval Sorcerer Azur.</li>
+            <li><strong>Stars of Ruin</strong> — quest de Master Lusat em Sellia, Caelid; exige a Sellian Sealbreaker.</li>
+            <li><strong>Rock Sling</strong> — loot em um baú no Underground Roadside (Caelid).</li>
+            <li><strong>Ranni's Dark Moon</strong> — obtida ao completar a quest de Ranni na Torre de Ranni.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 O Guia do Maculado &mdash; Projeto Json</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
