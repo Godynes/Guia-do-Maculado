@@ -228,11 +228,9 @@ footer::before {
 
 /* Apresentação (painel esquerdo) */
 .apresentacao {
-    position: fixed;
-    left: 4rem;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
     max-width: 440px;
+    margin: 4rem auto 2rem 4rem;
     z-index: 30;
     display: flex;
     flex-direction: column;
@@ -242,8 +240,8 @@ footer::before {
 }
 
 @keyframes fadeSlideIn {
-    from { opacity: 0; transform: translateY(calc(-50% + 24px)); }
-    to   { opacity: 1; transform: translateY(-50%); }
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 .titulo-imagem {
@@ -280,6 +278,49 @@ footer::before {
     height: 1px;
     background: linear-gradient(90deg, var(--ouro-escuro), transparent);
     margin-bottom: 1rem;
+}
+
+body.index-page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body.index-page .apresentacao {
+    flex: 0 1 auto;
+    margin: clamp(1rem, 4vh, 2.5rem) auto 0 4rem;
+    max-height: calc(100vh - var(--header-h) - 130px);
+    padding-block: clamp(1rem, 2.5vh, 1.8rem);
+    gap: clamp(0.65rem, 1.5vh, 1.2rem);
+}
+
+body.index-page .titulo-imagem {
+    max-height: 22vh;
+    object-fit: contain;
+}
+
+body.index-page .apresentacao p {
+    font-size: clamp(0.9rem, 1.9vh, 1.05rem);
+    line-height: 1.65;
+}
+
+body.index-page .apresentacao p:last-child {
+    font-size: clamp(0.86rem, 1.75vh, 1rem);
+}
+
+body.index-page main.container {
+    flex: 1 1 auto;
+    min-height: 0;
+    padding-block: 0;
+}
+
+body.index-page footer {
+    flex: 0 0 auto;
+    margin-bottom: 0;
+    padding: clamp(0.85rem, 2vh, 2rem);
+}
+
+body.index-page footer::before {
+    margin-bottom: 0.35rem;
 }
 
 /* Container principal */
@@ -329,6 +370,58 @@ main.container {
     backdrop-filter: blur(10px);
     white-space: nowrap;
     transition: all var(--dur) var(--ease);
+}
+
+.tabs-menu .store-tab {
+    display: flex;
+    align-items: center;
+    background: rgba(10, 8, 14, 0.95);
+    border-left: 2px solid var(--ouro-muted);
+    backdrop-filter: blur(10px);
+    transition: all var(--dur) var(--ease);
+}
+
+.tabs-menu li + li.store-tab {
+    border-top: 1px solid var(--borda-sutil);
+}
+
+.tabs-menu .store-tab a {
+    padding: 1.1rem 0.35rem;
+    background: transparent;
+    border-left: 0;
+    backdrop-filter: none;
+}
+
+.tabs-menu .store-tab a:first-child {
+    padding-left: 1.2rem;
+}
+
+.tabs-menu .store-tab a:last-child {
+    padding-right: 1.6rem;
+}
+
+.tabs-menu .store-tab span {
+    font-family: var(--fonte-titulo);
+    font-size: 0.72rem;
+    color: var(--ouro-escuro);
+}
+
+.tabs-menu .store-tab:hover {
+    background: rgba(22, 17, 10, 0.98);
+    border-left-color: var(--ouro);
+    box-shadow: -6px 0 30px var(--ouro-glow);
+}
+
+.tabs-menu .store-tab a:hover {
+    color: var(--ouro-claro);
+    background: transparent;
+    border-left-color: transparent;
+    padding-right: 0.35rem;
+    box-shadow: none;
+}
+
+.tabs-menu .store-tab a:last-child:hover {
+    padding-right: 1.6rem;
 }
 
 .tabs-menu li + li a {
@@ -1095,6 +1188,10 @@ body.builds-page main.container {
         width: 100%;
     }
 
+    .tabs-menu li {
+        flex: 1;
+    }
+
     .tabs-menu a {
         font-size: 0.56rem;
         padding: 0.85rem 0.4rem;
@@ -1106,9 +1203,49 @@ body.builds-page main.container {
         letter-spacing: 0.08em;
     }
 
+    .tabs-menu .store-tab {
+        justify-content: center;
+        border-left: none;
+        border-top: 2px solid transparent;
+    }
+
+    .tabs-menu li + li.store-tab {
+        border-top: 2px solid transparent;
+    }
+
+    .tabs-menu .store-tab a {
+        flex: 0 1 auto;
+        padding: 0.85rem 0.18rem;
+    }
+
+    .tabs-menu .store-tab a:first-child {
+        padding-left: 0.35rem;
+    }
+
+    .tabs-menu .store-tab a:last-child {
+        padding-right: 0.35rem;
+    }
+
+    .tabs-menu .store-tab span {
+        font-size: 0.56rem;
+    }
+
+    .tabs-menu .store-tab:hover {
+        border-top-color: var(--ouro);
+    }
+
     .tabs-menu a:hover {
         padding-right: 0.4rem;
         border-top-color: var(--ouro);
+    }
+
+    .tabs-menu .store-tab a:hover,
+    .tabs-menu .store-tab a:last-child:hover {
+        padding-right: 0.18rem;
+    }
+
+    .tabs-menu .store-tab a:last-child:hover {
+        padding-right: 0.35rem;
     }
 
     .maculado-hover {

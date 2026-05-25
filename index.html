@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="index-page">
 
 <header>
     <h1>Welcome, Tarnished</h1>
@@ -35,8 +35,11 @@
             <li><a href="builds.html" class="tab-link">Builds</a></li>
             <li><a href="bosses.html" class="tab-link">Chefes</a></li>
             <li><a href="lore.html" class="tab-link">Lore</a></li>
-            <li><a href="https://store.steampowered.com/app/2778580/ELDEN_RING_Shadow_of_the_Erdtree/#dlc" class="tab-link" target="_blank" rel="noopener">DLC</a></li>
-            <li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/#steam" class="tab-link" target="_blank" rel="noopener">Steam</a></li>
+            <li class="store-tab">
+                <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/#steam" class="tab-link" target="_blank" rel="noopener">Steam</a>
+                <span aria-hidden="true">/</span>
+                <a href="https://store.steampowered.com/app/2778580/ELDEN_RING_Shadow_of_the_Erdtree/#dlc" class="tab-link" target="_blank" rel="noopener">DLC</a>
+            </li>
         </ul>
     </nav>
 </main>
