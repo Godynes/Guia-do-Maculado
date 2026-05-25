@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builds - O Guia do Maculado</title>
+    <meta name="description" content="Builds de Elden Ring para força, bleed e mais, com dicas de armas e atributos.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="builds-page">
+    <a href="index.html" class="voltar-home" aria-label="Voltar para a página principal">← Início</a>
+
+    <header>
+        <h1>Builds</h1>
+        <p>Forje o seu caminho pelas Terras Intermédias.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="builds-listas">
+
+           <article class="build-card">
+    <h2>Builds de Força</h2>
+    <p>Build ideal para jogadores que preferem armas pesadas e combate corpo a corpo.</p>
+
+    <button type="button" class="abrir-modal" data-modal="modal-forca">
+        Ver detalhes
+    </button>
+</article>
+
+<article class="build-card">
+    <h2>Builds de Bleed</h2>
+    <p>Build ideal para jogadores que preferem agilidade, ataques rápidos e sangramento.</p>
+
+    <button type="button" class="abrir-modal" data-modal="modal-bleed">
+        Ver detalhes
+    </button>
+</article>
+        </section>
+    </main>
+    
+    <div class="modal" id="modal-forca" role="dialog" aria-modal="true" aria-labelledby="modal-forca-title">
+    <div class="modal-content" tabindex="-1">
+        <button type="button" class="fechar" aria-label="Fechar modal">&times;</button>
+
+        <h2 id="modal-forca-title">Build de Força</h2>
+
+        <ul>
+            <li>Classe: Força</li>
+            <li>Arma: Blasphemous Sword</li>
+            <li>Atributos: Força, Vitalidade</li>
+            <li>Estilo: Corpo a corpo</li>
+        </ul>
+
+        <h3>Como obter</h3>
+
+        <ul>
+            <li>Derrote Rykard, o Senhor da Blasfêmia.</li>
+            <li>Localização: Mansão Vulcânica.</li>
+            <li>Troque a Lembrança do Blasfemo pela arma.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="modal" id="modal-bleed" role="dialog" aria-modal="true" aria-labelledby="modal-bleed-title">
+    <div class="modal-content" tabindex="-1">
+        <button type="button" class="fechar" aria-label="Fechar modal">&times;</button>
+
+        <h2 id="modal-bleed-title">Build de Bleed</h2>
+
+        <ul>
+            <li>Classe: Samurai</li>
+            <li>Arma: Rivers of Blood</li>
+            <li>Atributos: Destreza, Arcano</li>
+            <li>Estilo: Combate ágil</li>
+        </ul>
+
+        <h3>Como obter</h3>
+
+        <ul>
+            <li>Derrote Okina Dedo Sangrento.</li>
+            <li>Localização: Igreja do Repouso, Cumes dos Gigantes.</li>
+            <li>Deve ser obtida antes de derrotar o Gigante de Fogo.</li>
+        </ul>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2026 O Guia do Maculado - Projeto Json</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
